@@ -1,62 +1,24 @@
 export default {
   data: {
-    deck: [
-      -2,
-      -2,
-      -1,
-      -1,
-      0,
-      0,
-      0,
-      0,
-      1,
-      1,
-      1,
-      1,
-      2,
-      2,
-      2,
-      2,
-      3,
-      3,
-      3,
-      3,
-      4,
-      4,
-      4,
-      4,
-      5,
-      5,
-      5,
-      5,
-      6,
-      6,
-      6,
-      6,
-      7,
-      7,
-      7,
-      7,
-      8,
-      8,
-      8,
-      8,
-      9,
-      9,
-      9,
-      10,
-      10,
-      10,
-      11,
-      11,
-      11,
-      12,
-      12,
-      12,
-    ],
+    deck: [],
+    cards: [],
     is_card_in_hand : 0,
     card_in_hand: {},
     is_discard : 0,
     card_in_discard : {},
+    is_game_started : 0,
+    game_state : 0 , 
+      /*
+      */
+    turn : 0,
+    player_data : []
+      /*{
+        name: "" 
+        board: []
+        nb_visible : 
+        nb_enabled :
+        
+      }*/
+    
   },
 };

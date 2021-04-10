@@ -4,7 +4,10 @@
         :key="shared_data.card_in_discard.cardnb"
         v-if="shared_data.is_discard"         
         v-bind:cardnb="shared_data.card_in_discard.cardnb"
-        visible="true"/>
+        v-bind:visible=true
+        v-bind:enable=true
+        v-bind:position=-2
+        />
   </div>
 </template>
 
@@ -24,7 +27,7 @@ export default {
   },
   methods: {
       putCardInHand: function () {
-        if (this.shared_data.is_discard)
+        if (this.shared_data.is_discard && !this.shared_data.is_card_in_hand)
         {
             this.shared_data.card_in_hand = this.shared_data.card_in_discard;
             this.shared_data.is_card_in_hand = true;
